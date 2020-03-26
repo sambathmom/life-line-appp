@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <TextView
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/textColor"
+        android:text="@string/T1_Ans1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/tv_text" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@color/colorAccent"
+        android:layout_above="@id/btn_2"
+        android:text="@string/T1_Ans1"
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/textColor"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:text="@string/T1_Ans2"
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
